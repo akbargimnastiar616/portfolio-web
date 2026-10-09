@@ -2576,13 +2576,12 @@ button {
 }
 
 .res-header {
-  border-bottom: 2px solid #0F172A;
-  padding-bottom: 1rem;
+  border-bottom: 1.5px solid #0F172A;
+  padding-bottom: 0.85rem;
   margin-bottom: 1.25rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 1rem;
   text-align: left;
 }
 
@@ -2591,12 +2590,12 @@ button {
 }
 
 .res-photo-wrapper {
-  width: 78px;
-  height: 98px;
-  border-radius: 4px;
+  width: 76px;
+  height: 96px;
+  border-radius: 3px;
   overflow: hidden;
   border: 1px solid #CBD5E1;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   flex-shrink: 0;
 }
 
@@ -2604,33 +2603,44 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 15%;
   display: block;
 }
 
 .res-name {
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   font-weight: 800;
   color: #0F172A;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
 }
 
-.res-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #2563EB;
-  margin: 0.25rem 0;
+.res-contact-line {
+  font-size: 0.72rem;
+  color: #334155;
+  line-height: 1.5;
+  margin-bottom: 0.2rem;
+  word-break: break-all;
 }
 
-.res-meta {
+.res-address {
+  font-size: 0.72rem;
+  color: #334155;
+  margin-bottom: 0.4rem;
+}
+
+.res-summary {
   font-size: 0.775rem;
-  color: #475569;
+  color: #1E293B;
+  line-height: 1.55;
 }
 
 .res-section {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
+/* English uppercase title (kept for backwards compat) */
 .res-section-title {
   font-size: 0.875rem;
   font-weight: 800;
@@ -2641,39 +2651,76 @@ button {
   margin-bottom: 0.65rem;
 }
 
-.res-p {
-  font-size: 0.8125rem;
-  color: #334155;
-  line-height: 1.55;
+/* Indonesian section title — matches image style */
+.res-section-title-id {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0F172A;
+  border-bottom: 1.5px solid #0F172A;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .res-job {
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .res-job-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   font-size: 0.825rem;
   color: #0F172A;
-  margin-bottom: 0.35rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
 }
 
 .res-job-date {
   font-size: 0.775rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: #334155;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+.res-location {
+  font-weight: 400;
+  color: #2563EB;
+  font-size: 0.8rem;
+}
+
+.res-job-role {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #334155;
+  margin-bottom: 0.3rem;
+}
+
+.res-company-desc {
+  font-size: 0.755rem;
   color: #64748B;
+  line-height: 1.45;
+  margin-bottom: 0.4rem;
+}
+
+.res-verified {
+  color: #2563EB;
+  font-size: 0.8rem;
 }
 
 .res-ul {
-  padding-left: 1.15rem;
-  font-size: 0.8rem;
-  color: #334155;
+  padding-left: 1.2rem;
+  font-size: 0.78rem;
+  color: #1E293B;
   line-height: 1.5;
 }
 
 .res-ul li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
+}
+
+.res-skills-list {
+  list-style: disc;
 }
 
 .res-skills-grid {
@@ -2682,6 +2729,12 @@ button {
   gap: 0.4rem;
   font-size: 0.8rem;
   color: #334155;
+}
+
+.res-p {
+  font-size: 0.8125rem;
+  color: #334155;
+  line-height: 1.55;
 }
 
 /* ==========================================================================
